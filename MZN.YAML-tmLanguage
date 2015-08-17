@@ -1,0 +1,88 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+
+#
+#  MiniZinc syntax highlighter for Sublime Text
+#
+#  (c) Andreas Stenmark, 2015
+#
+
+---
+name: MiniZinc (MZN)
+scopeName: source.mzn
+fileTypes: ["mzn", "dzn"]
+uuid: 5927bf82-cf44-455a-bd58-fed8cc0d02cc
+
+patterns:
+
+## Single line comment
+- name: comment.line.percentage.mzn
+  match: \%.*
+
+## Multi line comment
+- name: comment.block.mzn
+  begin: /\*
+  end: \*/
+
+## Single quoted string
+- name: string.quoted.single.mzn
+  match: \'.*?\'
+
+## Double quoted string
+- name: string.quoted.double.mzn
+  match: \".*?\"
+
+## Keywords
+- name: keyword.control.mzn
+  match: \b(ann|annotation|any|assert|constraint|function|in|include|list|of|op|output|minimize|maximize|par|predicate|record|satisfy|solve|test|type|var)\b
+
+## Data Types
+- name: storage.type.mzn
+  match: \b(array|set|bool|enum|float|int|string|tuple)\b
+
+## Flow control keywords
+- name: keyword.control.mzn
+  match: \b(for|forall|if|then|else|where)\b
+
+## Built-in functions
+- name: entity.name.function.mzn
+  match: \b(abort|abs|acosh|array_intersect|array_union|array1d|array2d|array3d|array4d|array5d|array6d|asin|assert|atan|bool2int|card|ceil|concat|cos|cosh|dom|dom_array|dom_size|fix|exp|floor|index_set|index_set_1of2|index_set_2of2|index_set_1of3|index_set_2of3|index_set_3of3|int2float|is_fixed|join|lb|lb_array|length|ln|log|log2|log10|min|max|pow|product|round|set2array|show|show_int|show_float|sin|sinh|sqrt|sum|tan|tanh|trace|ub|ub_array)\b
+
+## Global constraints
+- name: support.function.mzn
+  match: \b(alldifferent|cumulative|disjunctive|inverse|partition_set)\b
+
+## Unary operators
+- name: keyword.operator.math.mzn
+  match: \b(not|\+|-)\b
+
+## Logical operators
+- name: keyword.operator.logical.mzn
+  match: \b(<->|->|<-|\\/|xor|/\\)\b
+
+## Comparison operators
+- name: keyword.operator.math.mzn
+  match: \b(<|>|<=|>=|==|=|!=)\b
+
+## Arithmetic operators
+- name: keyword.operator.math.mzn
+  match: \b(\+|-|\*|/|div|mod)\b
+
+## Set operators
+- name:  keyword.operator.sets.mzn
+  match: \b(in|subset|superset|union|diff|symdiff|intersect)\b
+
+## Other operators and similar
+- name: keyword.operator.math.mzn
+  match: \|\.\.|\+\+
+
+## Constants
+- name: constant.language.mzn
+  match: \b(true|false)\b
+
+## Variable names
+- name: variable.other.mzn
+  match: \b([_A-Za-z])(\w*)\b
+
+## Numbers
+- name: constant.numeric.mzn
+  match: ([+-]?)\d+(\.[^\.]\d*)?([eE][-+]?\d+)?

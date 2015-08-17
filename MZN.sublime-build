@@ -1,0 +1,4 @@
+{
+    "cmd": ["minizinc", "$file_name"],
+    "selector": "source.mzn"
+}
