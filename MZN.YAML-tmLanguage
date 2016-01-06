@@ -41,7 +41,7 @@ patterns:
 
 ## Flow control keywords
 - name: keyword.control.mzn
-  match: \b(for|forall|if|then|else|where)\b
+  match: \b(for|forall|if|then|else|endif|where)\b
 
 ## Built-in functions
 - name: entity.name.function.mzn

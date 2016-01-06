@@ -51,7 +51,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(for|forall|if|then|else|where)\b</string>
+			<string>\b(for|forall|if|then|else|endif|where)\b</string>
 			<key>name</key>
 			<string>keyword.control.mzn</string>
 		</dict>
