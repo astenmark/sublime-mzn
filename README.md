@@ -1,6 +1,10 @@
 # MiniZinc package for Sublime Text
 
-Syntax highlighting for the MiniZinc modelling language (.mzn and .dzn files).
+Syntax highlighting for the MiniZinc modelling language (.mzn and .dzn files). Here's what it looks like:
+
+![alt text](https://cloud.githubusercontent.com/assets/7506161/12205405/b5dfdfee-b63a-11e5-9d95-a86d1aa3c664.png "MZN with Cobalt color scheme")
+
+![alt text](https://cloud.githubusercontent.com/assets/7506161/12205420/d04a3d8e-b63a-11e5-8a3e-60238f1f700b.png "MZN with Neon color scheme")
 
 ## Installation
 
@@ -13,9 +17,11 @@ Copy the MZN.* files into the Sublime Text "Packages" direcory.  This can be don
 * Windows:
     `%APPDATA%/Sublime Text 3/Packages/`
 
+Alternatively, navigate to the "Packages" directory and clone the git repository.
+
 ## About MiniZinc
 
-MiniZinc is a medium-level constraint modelling language. It is high-level enough to express most constraint problems easily, but low-level enough that it can be mapped onto existing solvers easily and consistently. It is a subset of the higher-level language Zinc. 
+MiniZinc is a medium-level constraint modelling language. It is high-level enough to express most constraint problems easily, but low-level enough that it can be mapped onto existing solvers easily and consistently. It is a subset of the higher-level language Zinc.
 
 MiniZinc is available from http://www.minizinc.org/
 
@@ -29,6 +35,6 @@ A very simple build system is also included.  To solve a model, `Ctrl-B` (or `Cm
 
 ## License
 
-Copyright (c) 2015 Andreas Stenmark
+Copyright (c) 2015-2016 Andreas Stenmark
 
 This is free software. It is licensed under the MIT License. Feel free to use this in your own work. However, if you modify and/or redistribute it, please attribute me in some way, and it would be great if you distribute your work under this or a similar license, but it's not required.

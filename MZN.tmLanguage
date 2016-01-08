@@ -39,7 +39,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ann|annotation|any|assert|constraint|function|in|include|list|of|op|output|minimize|maximize|par|predicate|record|satisfy|solve|test|type|var)\b</string>
+			<string>\b(ann|annotation|any|constraint|function|in|include|list|of|op|output|minimize|maximize|par|predicate|record|satisfy|solve|test|type|var)\b</string>
 			<key>name</key>
 			<string>keyword.control.mzn</string>
 		</dict>
@@ -63,7 +63,55 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(alldifferent|cumulative|disjunctive|inverse|partition_set)\b</string>
+			<string>\b(circuit|disjoint|maximum|maximum_arg|member|minimum|minimum_arg|network_flow|network_flow_cost|partition_set|range|roots|sliding_sum|subcircuit|sum_pred)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(alldifferent|all_different|all_disjoint|all_equal|alldifferent_except_0|nvalue|symmetric_all_different)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(lex2|lex_greater|lex_greatereq|lex_less|lex_lesseq|strict_lex2|value_precede|value_precede_chain)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(arg_sort|decreasing|increasing|sort)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(int_set_channel|inverse|inverse_set|link_set_to_booleans)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(among|at_least|at_most|at_most1|count|count_eq|count_geq|count_gt|count_leq|count_lt|count_neq|distribute|exactly|global_cardinality|global_cardinality_closed|global_cardinality_low_up|global_cardinality_low_up_closed)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(bin_packing|bin_packing_capa|bin_packing_load|diffn|diffn_k|diffn_nonstrict|diffn_nonstrict_k|geost|geost_bb|geost_smallest_bb|knapsack)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(alternative|cumulative|disjunctive|disjunctive_strict|span)\b</string>
+			<key>name</key>
+			<string>support.function.mzn</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(regular|regular_nfa|table)\b</string>
 			<key>name</key>
 			<string>support.function.mzn</string>
 		</dict>

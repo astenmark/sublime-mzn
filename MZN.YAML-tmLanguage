@@ -3,7 +3,7 @@
 #
 #  MiniZinc syntax highlighter for Sublime Text
 #
-#  (c) Andreas Stenmark, 2015
+#  Copyright (c) 2015-2016 Andreas Stenmark
 #
 
 ---
@@ -33,7 +33,7 @@ patterns:
 
 ## Keywords
 - name: keyword.control.mzn
-  match: \b(ann|annotation|any|assert|constraint|function|in|include|list|of|op|output|minimize|maximize|par|predicate|record|satisfy|solve|test|type|var)\b
+  match: \b(ann|annotation|any|constraint|function|in|include|list|of|op|output|minimize|maximize|par|predicate|record|satisfy|solve|test|type|var)\b
 
 ## Data Types
 - name: storage.type.mzn
@@ -49,7 +49,39 @@ patterns:
 
 ## Global constraints
 - name: support.function.mzn
-  match: \b(alldifferent|cumulative|disjunctive|inverse|partition_set)\b
+  match: \b(circuit|disjoint|maximum|maximum_arg|member|minimum|minimum_arg|network_flow|network_flow_cost|partition_set|range|roots|sliding_sum|subcircuit|sum_pred)\b
+
+## All-Different and related constraints
+- name: support.function.mzn
+  match: \b(alldifferent|all_different|all_disjoint|all_equal|alldifferent_except_0|nvalue|symmetric_all_different)\b
+
+## Lexicographic constraints
+- name: support.function.mzn
+  match: \b(lex2|lex_greater|lex_greatereq|lex_less|lex_lesseq|strict_lex2|value_precede|value_precede_chain)\b
+
+## Sorting constraints
+- name: support.function.mzn
+  match: \b(arg_sort|decreasing|increasing|sort)\b
+
+## Channeling constraints
+- name: support.function.mzn
+  match: \b(int_set_channel|inverse|inverse_set|link_set_to_booleans)\b
+
+## Counting constraints
+- name: support.function.mzn
+  match: \b(among|at_least|at_most|at_most1|count|count_eq|count_geq|count_gt|count_leq|count_lt|count_neq|distribute|exactly|global_cardinality|global_cardinality_closed|global_cardinality_low_up|global_cardinality_low_up_closed)\b
+
+## Packing constraints
+- name: support.function.mzn
+  match: \b(bin_packing|bin_packing_capa|bin_packing_load|diffn|diffn_k|diffn_nonstrict|diffn_nonstrict_k|geost|geost_bb|geost_smallest_bb|knapsack)\b
+
+## Scheduling constraints
+- name: support.function.mzn
+  match: \b(alternative|cumulative|disjunctive|disjunctive_strict|span)\b
+
+## Extensional constraints (table, regular etc.)
+- name: support.function.mzn
+  match: \b(regular|regular_nfa|table)\b
 
 ## Unary operators
 - name: keyword.operator.math.mzn
